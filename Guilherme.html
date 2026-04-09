@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>...</title>
+  <style>
+    body {
+      background: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #fake404 {
+      display: none;
+      margin-top: 20%;
+    }
+  </style>
+</head>
+<body>
+
+<div id="fake404">
+  <h1>404 Not Found</h1>
+  <p>The requested URL was not found on this server.</p>
+</div>
+
+<script>
+  // attendre 2 secondes avant d'afficher le 404
+  setTimeout(() => {
+    document.title = "404 Not Found";
+    document.getElementById("fake404").style.display = "block";
+  }, 2000);
+</script>
+
+</body>
+</html>
